@@ -7,7 +7,7 @@ test.describe("Launch Browser suite", ()=>{
         const browser = await chromium.launch();
         const context = await browser.newContext();
         const page = await context.newPage();
-        page.goto("https://www.google.com");
+        await page.goto("https://www.google.com");
     });
 
 
